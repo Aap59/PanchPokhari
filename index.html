@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanchPokhari</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="https://drive.google.com/uc?id=1Ao68XIA36v0o5lNF4e8OWgpuHyuuciM5"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Source+Code+Pro:wght@200&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        @media screen and (max-width: 1080px) {
+            h1 {
+                font-size: 2px;
+            }
+
+            header {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+                    /* url("../images/PanchPokhariTemple.jpg"); */
+                    url("https://drive.google.com/uc?id=1eVdEGfHG1rAd5_Xt3qd13c4ipzVom1I3");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            nav {
+                width: 134%;
+                font-size: 19px;
+                padding: 22px 34px;
+                height: 14vh;
+                background: rgba(0, 0, 0, 0.2);
+                color: white;
+                display: flex;
+                /* justify-content: space-between; */
+                align-items: center;
+                text-transform: uppercase;
+            }
+
+            nav .logo {
+                width: 25%;
+                /* text-align: center; */
+                /* background: red; */
+            }
+
+            nav .menu {
+                width: 46%;
+                display: flex;
+                /* justify-content: space-around; */
+            }
+
+            nav .menu a {
+                border-radius: 25px;
+                width: 13%;
+                padding: 14px 57px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+
+            nav .menu a:hover {
+                color: blue;
+                text-decoration: underline;
+            }
+
+            nav .menu a:first-child {
+                color: #000000;
+            }
+
+            main {
+                width: 100%;
+                height: 85vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: white;
+            }
+
+            section h3 {
+                font-size: 35px;
+                font-weight: 200;
+                letter-spacing: 3px;
+                text-shadow: 1px 1px 2px black;
+            }
+
+            section h1 {
+                margin: 30px 0 20px 0;
+                font-size: 55px;
+                font-weight: 700;
+                text-shadow: 2px 1px 5px black;
+                text-transform: uppercase;
+            }
+
+            section p {
+                font-size: 25px;
+                word-spacing: 2px;
+                margin-bottom: 25px;
+                text-shadow: 1px 1px 1px black;
+            }
+
+            section a {
+                padding: 12px 30px;
+                border-radius: 4px;
+                outline: none;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 500;
+                text-decoration: none;
+                letter-spacing: 1px;
+                transition: all 0.5s ease;
+            }
+
+            section .btnone {
+                /*background: #00b894;*/
+                background: #fff;
+                color: #000;
+            }
+
+            .btnone:hover {
+                background: #00b894;
+                color: white;
+            }
+
+            section .btntwo {
+                background: #00b894;
+                color: white;
+            }
+
+            .btntwo:hover {
+                background: #fff;
+                color: #000;
+            }
+
+            .change_content:after {
+                content: "";
+                animation: changetext 10s infinite linear;
+                font-family: "Source Code Pro", monospace;
+                color: #00b894;
+            }
+
+            @keyframes changetext {
+                0% {
+                    content: "Panchpokhari";
+                }
+
+                20% {
+                    content: "Manam";
+                }
+
+                35% {
+                    content: "ThangpalDhap";
+                }
+
+                60% {
+                    content: "LauriBinayak";
+                }
+
+                80% {
+                    content: "Langtang";
+                }
+
+                100% {
+                    content: "DorgeLakpa Himal";
+                }
+            }
+
+            footer #copy {
+                color: rgb(98, 8, 8);
+                font-size: 24px;
+                font-family: cursive;
+                text-align: center;
+                background-color: #a55050;
+            }
+        }
+
+        /* Tabled Portrait */
+        @media screen and (min-width: 1081px) {
+
+            header {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+                    /* url("../images/PanchPokhariTemple.jpg"); */
+                    url("https://drive.google.com/uc?id=1eVdEGfHG1rAd5_Xt3qd13c4ipzVom1I3");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            nav {
+                width: 100%;
+                font-size: 24px;
+                padding: 35px 34px;
+                height: 15vh;
+                background: rgba(0, 0, 0, 0.2);
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: uppercase;
+            }
+
+            nav .logo {
+                width: 25%;
+                text-align: center;
+                /*background: red;*/
+            }
+
+            nav .menu {
+                width: 40%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            nav .menu a {
+                border-radius: 24px;
+                width: 25%;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+
+            nav .menu a:hover {
+                color: blue;
+                text-decoration: underline;
+            }
+
+            nav .menu a:first-child {
+                color: #000000;
+            }
+
+            main {
+                width: 100%;
+                height: 85vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: white;
+            }
+
+            section h3 {
+                font-size: 35px;
+                font-weight: 200;
+                letter-spacing: 3px;
+                text-shadow: 1px 1px 2px black;
+            }
+
+            section h1 {
+                margin: 30px 0 20px 0;
+                font-size: 55px;
+                font-weight: 700;
+                text-shadow: 2px 1px 5px black;
+                text-transform: uppercase;
+            }
+
+            section p {
+                font-size: 25px;
+                word-spacing: 2px;
+                margin-bottom: 25px;
+                text-shadow: 1px 1px 1px black;
+            }
+
+            section a {
+                padding: 12px 30px;
+                border-radius: 4px;
+                outline: none;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 500;
+                text-decoration: none;
+                letter-spacing: 1px;
+                transition: all 0.5s ease;
+            }
+
+            section .btnone {
+                /*background: #00b894;*/
+                background: #fff;
+                color: #000;
+            }
+
+            .btnone:hover {
+                background: #00b894;
+                color: white;
+            }
+
+            section .btntwo {
+                background: #00b894;
+                color: white;
+            }
+
+            .btntwo:hover {
+                background: #fff;
+                color: #000;
+            }
+
+            .change_content:after {
+                content: "";
+                animation: changetext 10s infinite linear;
+                font-family: "Source Code Pro", monospace;
+                color: #00b894;
+            }
+
+            @keyframes changetext {
+                0% {
+                    content: "Panchpokhari";
+                }
+
+                20% {
+                    content: "Manam";
+                }
+
+                35% {
+                    content: "ThangpalDhap";
+                }
+
+                60% {
+                    content: "LauriBinayak";
+                }
+
+                80% {
+                    content: "Langtang";
+                }
+
+                100% {
+                    content: "DorgeLakpa Himal";
+                }
+            }
+
+            footer #copy {
+                color: rgb(98, 8, 8);
+                font-size: 24px;
+                font-family: cursive;
+                text-align: center;
+                background-color: #a55050;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">
+                <h1 style="font-size: 20px;"> Aap_7 </h1>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">gallery</a>
+                <a href="#" target="_blank">about</a>
+                <a href="#">contact</a>
+            </div>
+        </nav>
+
+        <main>
+            <section>
+                <h3>Welcome To PanchPokhari</h3>
+                <h1>DO COME & VISIT <span class="change_content"> </span> <span style="margin-top: -10px;"> </span>
+                </h1>
+                <p>"Visit once in life."</p>
+                <a href="#" class="btnone">learn more</a>
+                <a href="#" class="btntwo">signup here</a>
+            </section>
+        </main>
+
+
+    </header>
+    <footer>
+        <div id="copy">Copyright&copy;&nbsp;2022&nbsp;Adarsha&nbsp;Paudyal</div>
+    </footer>
+
+</body>
+
+</html>
